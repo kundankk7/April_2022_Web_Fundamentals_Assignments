@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2> Form you have to fill:-</h2>
+    <form action="backend.php">
+
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myname" id="name" placeholder="Enter Name" size="70">
+        </div>
+        <br>
+
+        <label for="Password">Password:</label>
+        <div>
+            <input type="password" name="myroll no" id="Password" placeholder="Enter Password" minlength="8">
+        </div>
+        <br>
+
+        <div>
+            <label for="Email:">Email:</label>
+             <input type="email" name="myemail" id="Email" placeholder="xyz@gmail.com">
+        </div>
+        <br>
+
+        <div>
+            DOB:<input type="date" name="mydate">
+        </div>
+        <br>
+
+        <div>
+            Time:<input type="time" name="mytime">
+        </div>
+        <br>
+        <div>
+            Choose Time and Date:<input type="datetime-local" >
+        </div>
+        <br>
+        <div>
+            Choose Month:<input type="month" >
+        </div>
+        <br>
+        <div>
+            Choose Week:<input type="week" >
+        </div>
+        <br>
+        <!-- check uncheck as your wish -->
+        <div>
+            Are you 18 plus? <input type="checkbox" name="myare you 18 plus?">
+        </div>
+        <br>
+        <!-- always check -->
+
+        <div>
+            are you 18 plus?: <input type="checkbox" checked name="myare you 18 plus?">
+        </div>
+        <br>
+
+        <div>
+            gender: male <input type="radio" name="mygender"> female <input type="radio" name="mygender">other
+            <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Salary expect ?: <input type="number" name="mysalary expect ?">
+        </div>
+        <br>
+        <div>
+            color: <input type="color" name="mysalary expect ?">
+        </div>
+        <br>
+        <div>
+            Uplode files: <input type="file" name="mysalary expect ?">
+        </div>
+        <br>
+
+        <div>
+            <label for="country">country</label>
+            <select name="mycountry" id="country">
+                <option value="india">ind</option>
+                <option value="england">eng</option>
+                <option value="dubai">dubai</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            write about your experiance in previous job: <br><textarea name="mytext" cols="60" rows="10">
+
+            </textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset">
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
