@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_04_2022_Ass_1_rowspan.html</title>
+    <style>
+        body{
+            background-color: #7e85a854
+        }
+        @import url('http://fonts.cdnfonts.com/css/brush-king');
+
+        h2 {
+            text-align: center;
+            font-family: 'Brush King';
+            margin-bottom: 28px;
+            color: #241cca;
+            text-shadow: 8px 3px 20px #7e85a8;
+        }
+
+        #table {
+            margin-left: 36%;
+            padding-top: 17px;
+
+
+
+        }
+        table{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Rowspan Table </h2>
+    <div id="table">
+        <table frame="box" rules="all" cellpadding="20">
+            <!-- HEADING........................... -->
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>CITY</th>
+                <th>COUNTRY</th>
+            </tr>
+
+            <!-- TABLE DATA....................................... -->
+            <tr>
+                <th>101</th>
+                <th>Munna Tripathi</th>
+                <th>Mirzapur</th>
+                <th rowspan="3">India</th>
+            </tr>
+
+            <tr>
+                <th>102</th>
+                <th>Kaleen Tripathi</th>
+                <th>Mirzapur</th>
+
+            </tr>
+
+            <tr>
+                <th>102</th>
+                <th>Guddu Pandit</th>
+                <th>Mirzapur</th>
+
+            </tr>
+
+
+
+        </table>
+    </div>
+
+</body>
+
+</html>
