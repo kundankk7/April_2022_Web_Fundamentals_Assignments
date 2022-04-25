@@ -1,0 +1,207 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#logo img {
+    float: left;
+    height: 64px;
+    margin: 1px 10px;
+}
+
+#logo img:hover {
+    cursor: pointer;
+}
+
+#logo a {
+    text-decoration: none;
+    font-family: 'Square Peg';
+    float: left;
+    margin-top: 26px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #d52603;
+    margin-right: 327px;
+}
+
+.navbar1 {
+    background-color: #E5CB7A;
+    border-radius: 0px 0px 7px 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 59px;
+
+
+
+}
+
+.navbar1 ul {
+    overflow: auto;
+}
+
+.navbar1 li {
+    float: left;
+    list-style: none;
+    padding: 9px;
+    font-size: 22px;
+    margin: 6px 27px;
+}
+
+.navbar1 li a {
+    text-decoration: none;
+    font-family: "Block Berthold";
+    color: #402c2c;
+    letter-spacing: 0.5px;
+    /* padding: 3px 3px; */
+
+
+}
+
+.navbar1 li a:hover {
+    color: rgb(219, 145, 61);
+}
+
+.search {
+    color: rgb(15, 230, 212);
+    float: right;
+    padding: 7px 56px;
+    margin: 4px;
+    border-radius: 21px;
+    border: blueviolet;
+}
+
+section {
+    background-color: #eee9c9 !important;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.Menu_title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2rem;
+    text-align: center !important;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-family: "Block Berthold";
+    color: #b95c0f;
+}
+
+#main_menu {
+    margin: auto;
+}
+
+.image {
+    height: 250px;
+    width: 363px;
+    border-radius: 22px;
+    margin-right: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    margin: 10px 10px 10px 134px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.btn:hover{
+    color: #b95c0f;
+}
+
+.btn:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.pizza_menu {
+    background-color: #e5b28a !important;
+    overflow: hidden;
+    margin: -9px auto;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.pizza_menu_title {
+    padding: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2rem;
+    text-align: center !important;
+    font-family: "Block Berthold";
+    color: #4b2b12;
+}
+
+footer {
+    padding-top: 28px;
+    padding-bottom: 25px;
+    margin-top: 9px;
+    background-color: #3e1305;
+    color: white;
+
+}
