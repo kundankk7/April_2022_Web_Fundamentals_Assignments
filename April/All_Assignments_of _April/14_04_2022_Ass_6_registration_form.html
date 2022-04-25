@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regristation Form</title>
+    <style>
+        * {
+            text-decoration: none
+        }
+
+        @import url('http://fonts.cdnfonts.com/css/brush-king');
+
+        h2 {
+            text-align: center;
+            font-family: 'Brush King';
+            margin-bottom: 28px;
+            color: #716cda;
+            text-shadow: 8px 3px 20px #7e85a8;
+        }
+
+        h3 {
+            font-family: serif;
+            font-size: 22px;
+            text-shadow: 8px 3px 20px #7e85a8;
+        }
+
+        #cont {
+            /* border: 2px solid red; */
+            width: 70%;
+            margin-left: 225px;
+            padding-left: 9px;
+            padding-bottom: 18px;
+            padding-top: 17px;
+            background-color: #8f8cd6;
+            border-radius: 9px;
+            box-shadow: rgb(121 121 165 / 41%) 0px 0px 18px 13px, rgb(243 228 228 / 0%) 1px 1px 3px 0px;
+        }
+
+        label {
+            font-size: 19px;
+            font-family: serif;
+        }
+
+        input {
+            border-radius: 6px;
+            padding: 6px 18px;
+            font-size: 13px;
+            border: none;
+            background-color: #dfe1e7;
+            font-family: cursive;
+        }
+
+
+
+        #btn button {
+            padding: 4px 20px;
+            font-size: 16px;
+            margin-top: 41px;
+            font-family: cursive;
+            color: antiquewhite;
+            background-color: blueviolet;
+            cursor: pointer;
+            border-radius: 0px 10px 0px 10px;
+        }
+
+        button {
+            border: none;
+        }
+
+        /* #btn button:hover {
+            color: rgb(255, 0, 0);
+            background-color: #dbbfbf;
+            border: 2px solid rgb(255, 0, 0);
+        } */
+
+        #autocomplete {
+            margin-bottom: 12px;
+        }
+
+        #inputCity {
+            margin-left: 32px;
+        }
+
+        textarea {
+            background-color: #c2cae4;
+            border-radius: 8px;
+            padding: 4px 9px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <h2>Registration Form</h2>
+    </p>
+    <div id="cont">
+        <form action="">
+            <div>
+                <label for="First_name">First Name:</label>
+                <input type="text" placeholder="eg:-Kundan" id="First_name" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="Middle_name">Middle Name:</label>
+                <input type="text" placeholder="eg:-Kundan" id="Middle_name" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" placeholder="eg:-Singh" id="last_name" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="eg:-xyz@gmail.com" id="email" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="phonenumber">Phonenumber:</label>
+                <input type="tel" placeholder="eg:-7461027184" id="phonenumber" maxlength="10" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="password">Creat Password:</label>
+                <input type="password" placeholder="eg:-1@Abcdef" id="password" minlength="8"  size="70" >
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="mygender">Male
+                <input type="radio" id="gender" name="mygender">Female
+                <input type="radio" id="gender" name="mygender">Other
+            </div>
+
+            <div class="form-group">
+                <p>
+                <h3>Address :</h3>
+                </p>
+                <input type="text" id="autocomplete" placeholder="Street" size="120">
+                <input type="text" id="inputCity" placeholder="City">
+                <input type="text" id="inputState" placeholder="State">
+                <input type="number" id="inputZip" placeholder="Zip" maxlength="6">
+                <input type="text" id="inputCounty" placeholder="County" list="datalist">
+                <datalist id="datalist">
+                    <option value="india"></option>
+                    <option value="Nepal"></option>
+                    <option value="America"></option>
+                    <option value="Russia"></option>
+                    <option value="Japan"></option>
+                    <option value="UAE"></option>
+                    <option value="England"></option>
+                    <option value="Srilanka"></option>
+                    <option value="Canada"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </div>
+            <br>
+
+            <div>
+                <label for="Date">Date of Birth:</label>
+                <input type="date" id="Date">
+            </div>
+            <br>
+            <div>
+                <label for="checkbox">Are you 18+ ?:</label>
+                <input type="checkbox" id="checkbox" required>
+
+            </div>
+            <br>
+            <div>
+                <label for="yourid">Id That You Will Upload :</label>
+                <input type="text" id="yourid" placeholder="Id Proof" list="datalist">
+                <datalist id="datalist">
+                    <option value="Pen Card"></option>
+                    <option value="Aadhar Card"></option>
+                    <option value="Passport"></option>
+                    <option value="Driving Licence"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="upload_id">Upload Your Id:</label>
+                <input type="file" id="upload_id" required>
+            </div>
+            <br>
+            <div>
+                <label for="upload_photo">Upload Your Photo:</label>
+                <input type="file" id="upload_photo" required>
+                <label for="upload_thumb_impression">Upload Your Thumb Impression:</label>
+                <input type="file" id="upload_thumb_impression" required>
+            </div>
+            <br>
+            <div>
+                <label for="Feedback">Feedback:</label><br>
+                <textarea id="Feedback" placeholder="Write Feedback Here!" name="mytext" cols="60" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Conform_details" required>Above given details are correct.
+            </div>
+            <br>
+            <div id="btn">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

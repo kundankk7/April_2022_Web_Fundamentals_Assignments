@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search your Bus by Time</title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/brush-king');
+
+        h2 {
+            text-align: center;
+            font-family: 'Brush King';
+            margin-bottom: 28px;
+            color: #716cda;
+            text-shadow: 8px 3px 20px #7e85a8;
+        }
+        label {
+            font-size: 23px;
+            margin-top: 9px;
+            font-family: cursive;
+        }
+
+        #cont {
+            font-family: cursive;
+            background-color: #aba1de;
+            width: 20%;
+            text-align: center;
+            padding-bottom: 80px;
+            margin-left: 40%;
+            border-radius: 9px;
+            box-shadow: rgb(121 121 165 / 41%) 0px 0px 18px 13px, rgb(243 228 228 / 0%) 1px 1px 3px 0px;
+
+
+        }
+
+        input {
+            border-radius: 6px;
+            padding: 6px 18px;
+            font-size: 14px;
+            border: none;
+
+        }
+        #btn button {
+            padding: 4px 20px;
+            font-size: 16px;
+            margin-top: 41px;
+            font-family: cursive;
+            color: antiquewhite;
+            background-color: blueviolet;
+            cursor: pointer;
+            border-radius: 0px 10px 0px 10px;
+        }
+
+        button {
+            border: none;
+        }
+
+        #btn button:hover {
+            color: rgb(255, 0, 0);
+            background-color: #dbbfbf;
+            border: 2px solid rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Search Your Bus by Time</h2>
+    <div id="cont" align="center">
+
+        <div>
+            <label>Enter Arrival Time:</label>
+            <input type="time">
+        </div>
+        <br>
+        <div align="center">
+            <label>Enter Departure Time:</label>
+            <input type="time">
+        </div>
+        <br>
+        <div id="btn">
+            <button>Submit</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
