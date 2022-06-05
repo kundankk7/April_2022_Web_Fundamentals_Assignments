@@ -26,9 +26,34 @@
 </head>
 
 <body>
-    <p class="text-center"> <b>Question 3:</b> Write a program to display the n terms of odd natural number and their sum.</p>
-    <!--..................................... JS LINK...................................... -->
-    <script src="script.js"></script>
+    <p class="text-center"> <b>Question 3:</b>
+    <h3 class="text-center"> Write a program to display the n terms of odd natural number and their sum.</h3>
+    </p>
+    <h1 class="text-center">Click This Button to find the sum of nth odd no <button onclick="myFun()">Click me</button>
+    </h1>
+
+    <h2>
+        <p class="text-center" id="output"></p>
+    </h2>
+
+
+    <script>
+        function myFun() {
+            let num = prompt("Enter Any number to find the sum of nth odd no: ");
+            let sum = 0;
+            if (num != null) {
+                for (let i = 1; i <= num; i++) {
+                    if (i % 2 != 0) {
+                        sum += i;
+                    }
+                }
+                document.getElementById("output").innerHTML = sum + " is the sum of all odd numbers";
+            }
+            else {
+                document.getElementById("output").innerHTML = "please enter no to find the sum of nth odd no: ";
+            }
+        }
+    </script>
 </body>
 
 </html>
