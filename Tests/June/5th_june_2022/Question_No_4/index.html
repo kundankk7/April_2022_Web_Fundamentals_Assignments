@@ -26,9 +26,47 @@
 </head>
 
 <body>
-    <p class="text-center"><b>Question 4:</b>  WAP to print Nth prime number.(Input: 5, Output: 11, since 11 is the 5th prime number)</p>
+    <p class="text-center"><b>Question 4:</b>
+    <h3 class="text-center">WAP to print Nth prime number.(Input: 5, Output: 11, since 11 is the 5th
+        prime number)</h3>
+    </p>
+    <h1 class="text-center">Click This Button to print Nth prime number. <button onclick="myFun()">Click me</button>
+    </h1>
+
+    <h2>
+        <p class="text-center" id="output"></p>
+    </h2>
     <!--..................................... JS LINK...................................... -->
-    <script src="script.js"></script>
+    <script>
+        function myFun() {
+            let n = prompt("Enter any number to print Nth prime number.:");
+            let prime = 0;
+            let user = "";
+            if (n != null) {
+                let b = n;
+                let count = 0;
+                let index = 0;
+                for (let i = 2; i < n; i++) {
+                    n++;
+                    let j = 0;
+                    for (j = 2; j <= i; j++) {
+                        if (i % j == 0)
+                            break;
+                    }
+                    if (j == i) {
+                        count = j;
+                        index++;
+                    }
+                    if (index == b)
+                        break;
+                }
+                document.getElementById("output").innerHTML = count;
+            }
+            else {
+                document.getElementById("output").innerHTML = "Please enter no to print Nth prime number.";
+            }
+        } 
+    </script>
 </body>
 
 </html>
