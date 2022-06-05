@@ -26,9 +26,30 @@
 </head>
 
 <body>
-    <p class="text-center"><b>Question 2:</b> Write a program to display the cube of the number upto given an integer.</p>
-    <!--..................................... JS LINK...................................... -->
-    <script src="script.js"></script>
+    <p class="text-center"><b>Question 2:</b>
+    <h4 class="text-center"> Write a program to display the cube of the number upto given an integer.</h4>
+    </p>
+    <br><br>
+    <h3 class="text-center">Click This Button to find cuberoot: <button onclick="myFun()">Click me</button></h3>
+
+    <h2>
+        <p class="text-center" id="output"></p>
+    </h2>
+
+
+    <script>
+        function myFun() {
+            let num = prompt("Enter Any number to find cuberoot: ");
+            if (num != null) {
+                document.getElementById("output").innerHTML = ("cuberoot is:-", num * num * num);
+            }
+            else {
+                document.getElementById("output").innerHTML = "Please input any no. to find cuberoot";
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>
