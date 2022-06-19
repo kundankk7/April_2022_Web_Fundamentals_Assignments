@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- .....................FAVICON ICON........................ -->
+    <link rel="shortcut icon"
+        href="https://pngset.com/images/library-of-javascript-icon-graphic-freeuse-files-logo-logo-javascript-icon-in-number-symbol-text-first-aid-transparent-png-1497709.png"
+        type="image/x-icon">
+    <!-- ..................BOOTSTRAP CDN LINK.................... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>sum of all the positives numbers</title>
+</head>
+
+<body>
+    <p class="text-center"><b>Question 1:</b>
+    <h4 class="text-center"> Write a program to display the sum of all the positives numbers in an Array.</h4>
+    </p>
+    <br><br>
+
+    <h3 class="text-center"> the sum of all the positives numbers:</h3><br>
+
+    <h2>
+        <p class="text-center" id="output"></p>
+    </h2>
+
+</body>
+<script>
+    function sum_of_positive_no() {
+        const input = [1, -5, 2, 10, -30, 29, 50];
+        let negative = [];
+        let sum = 0;
+        for (let i = 0; i < input.length; i++) {
+            if (input[i] < 0) {
+                negative.push(input[i]);
+            }
+            else {
+
+                document.getElementById("output").innerText = ("Sum of all positive no in an Array is", sum = sum + input[i]);
+
+
+            }
+        }
+
+
+
+    }
+
+    sum_of_positive_no();
+</script>
+
+</html>
